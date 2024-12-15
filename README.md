@@ -24,7 +24,7 @@ $ touch example.go
 - HistoricalDataBasicFormat()
 - HistoricalDataSpecificFormat()
   
-# import 
+# Import 
 ```go
     "github.com/iqquee/exchangerateapi"
 ```
