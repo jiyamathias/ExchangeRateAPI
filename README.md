@@ -31,7 +31,7 @@ $ touch example.go
 # Standard
 Our Standard API endpoint is the easiest and fastest way to access our exchange rate data.
 ```go
-    apiKey := ""
+    	apiKey := ""
 	client := exchangerateapi.New(*http.DefaultClient, apiKey)
 
 	sd, err := client.Standard("USD")
@@ -45,7 +45,7 @@ Our Standard API endpoint is the easiest and fastest way to access our exchange 
 # PairConversion
 Our Pair Conversion API endpoint is useful for applications where you just want to convert between two specific currencies and aren't interested in any others.
 ```go
-    apiKey := ""
+    	apiKey := ""
 	client := exchangerateapi.New(*http.DefaultClient, apiKey)
 
 	pr, err := client.PairConversion("NGN", "USD")
