@@ -8,14 +8,14 @@ import (
 	"net/http"
 )
 
-type Config struct {
+type Client struct {
 	apiKey  string
 	baseUrl string
 	http    *http.Client
 }
 
-func New(h http.Client, apikey string) Config {
-	return Config{
+func New(h http.Client, apikey string) Client {
+	return Client{
 		apiKey:  apikey,
 		baseUrl: "https://v6.exchangerate-api.com/v6",
 		http:    &h,
@@ -23,7 +23,7 @@ func New(h http.Client, apikey string) Config {
 }
 
 // newRequest makes a http request to the zeptomail server and decodes the server response into the reqBody parameter passed into the newRequest method
-func (c *Config) newRequest(method, reqURL string, reqBody, resp interface{}) error {
+func (c *Client) newRequest(method, reqURL string, reqBody, resp interface{}) error {
 	var body io.Reader
 
 	if reqBody != nil {
