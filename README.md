@@ -9,7 +9,7 @@ See the [Exchange Rates API Docs](https://www.exchangerate-api.com/docs/overview
 # Installation
 This package can be installed using the go command below.
 ```sh
-go get github.com/iqquee/exchangerateapi@latest
+go get github.com/jiyamathias/exchangerateapi@latest
 ```
 # Quick start
 ```sh
@@ -26,7 +26,7 @@ $ touch example.go
   
 # Import 
 ```go
-    "github.com/iqquee/exchangerateapi"
+    "github.com/jiyamathias/exchangerateapi"
 ```
 # Standard
 Our Standard API endpoint is the easiest and fastest way to access our exchange rate data.
