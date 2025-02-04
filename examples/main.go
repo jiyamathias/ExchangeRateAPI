@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/iqquee/exchangerateapi"
+	"github.com/jiyamathias/exchangerateapi"
 )
 
 func main() {
